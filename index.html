@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+</head>
+
+<body>
+    <h1>maneg payment</h1>
+    <form id="addPayment" action="" onsubmit="addPayment()">
+        <input type="date" id="date" placeholder="date">
+        <input type="number" id="sum" placeholder="sum">
+        <input type="text" id="descreption" placeholder="descreption">
+        <input type="text" id="transactionStatus" placeholder="transaction status">
+        <select id="type" onchange="paymentType()">
+            <option value="">Cech</option>
+            <option value="">Credit</option>
+            <option value="">Clearing</option>
+        </select>
+        <input type="text" id="ClearingId" placeholder="ClearingId">
+        <input type="text" id="creditNum" placeholder="creditNum">
+
+        <h2>User details</h2>
+        <input type="text" id="name" placeholder="name">
+        <input type="tel" id="phon" placeholder="phon">
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
